@@ -100,6 +100,13 @@
 	font-family: "P-Regular";
 	font-size: 15px;
 	border-radius: 30px;
+	cursor: pointer;
+}
+
+.btn-main:hover {
+	background-color: var(--accent-color);
+	text-decoration: none;
+	color: white;
 }
 
 .blog-content {
