@@ -14,42 +14,279 @@
     </style>
     <link rel="stylesheet" href="fonts/font-face.css">
     </style>
-    <link rel="stylesheet" href="css/index.css">
     </style>
     <style>
-        .main-btn {
-            border-radius: 40px;
+        footer a:focus a:hover{
+            text-decoration: none;
         }
-        
-        .navbar{
+        .btn {
+            border-radius: 40px;
+            font-size: 18px;
+        }
+
+        .btn:focus {
+            box-shadow: none;
+        }
+
+        .navbar {
             margin-top: 20px;
             margin-left: 20px;
             margin-right: 20px;
+        }
+
+        .bold {
+            font-family: "P-Bold";
+        }
+
+        .rectangle {
+            position: relative;
+            width: 81px;
+            height: 5px;
+
+            background: #2E85D6;
+        }
+
+        .circular {
+            border-radius: 30px;
+        }
+
+        .description {
+            width: 478px;
+        }
+
+        body {
+            font-family: "P-Regular";
+        }
+
+        .sembuh {
+            background: #ACD136;
+        }
+
+        .dirawat {
+            background: #FDB047;
+
+        }
+
+        .meninggal {
+            background: #F25827;
+        }
+
+        .avatar {
+            width: 90px;
+            border-radius: 50%;
+        }
+
+        .next-btn {
+            width: 131px;
+            height: 68px;
+            border-radius: 10px;
+        }
+
+        .footer-bg {
+            background-color: rgba(46, 133, 214, 1);
+            margin-top: -10px;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <navbar class="navbar navbar-light  navbar-expand-lg">
+    <navbar class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid d-flex justify-content-end">
             <div class="d-flex">
                 <a href="#index" role="button" class="btn btn-primary main-btn">
-                    <span class="p-4"><b>Beranda</b></span>
+                    <span class="p-4">Beranda</span>
                 </a>
-                <a href="#index" role="button" class="btn">
-                    <span class="p-3"><b>Cek Kesehatan</b></span>
+                <a href="#index" class="btn">
+                    <span class="p-3">Cek Kesehatan</span>
                 </a>
-                <a href="#index" role="button" class="btn">
-                    <span class="p-3"><b>Blog</b></span>
+                <a href="#index" class="btn">
+                    <span class="p-3">Blog</span>
                 </a>
-                <a href="#index" role="button" class="btn">
-                    <span class="p-3"><b>Tentang</b></span>
+                <a href="#index" class="btn">
+                    <span class="p-3">Tentang</span>
                 </a>
             </div>
         </div>
-    </nav>
+    </navbar>
     <!-- END NAVBAR -->
+    <!-- Colasse -->
+    <div id="content" class="d-flex flex-wrap-reverse mt-5 align-content-center flex-sm-row flex-md-row flex-lg-row  flex-sm-wrap-reverse justify-content-between">
+        <div class="flex d-flex flex-column my-auto ml-5 p-5 mx-auto mx-sm-5 mx-md-5 mx-lg-5">
+            <h2 class="bold text-primary ml-5">COLASSE</h2>
+            <div class="d-flex description ml-5 flex-column text-wrap text-justify">
+                Covid Mental Assistance adalah web yang dibuat
+                untuk membantu para korban terdampak Covid-19
+                untuk dapat sehat secara mental.
+            </div>
+            <div class="mt-4 ml-5">
+                <button class="btn btn-primary px-sm-5 px-md-5 px-lg-5 mx-auto py-3"><span>Selengkapnya</span></button>
+            </div>
+        </div>
+        <div id="illustration" class="d-flex col-4 mx-auto col-sm-6 col-md-4 col-lg-4">
+            <img src="img/psychological.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <!-- end colasse -->
+    <!-- Pengaruh -->
+    <div class="container d-flex flex mx-auto my-auto flex-wrap flex-sm-row flex-md-row mt-5 mx-auto justify-content-center align-content-center">
+        <div class="m-5 mx-auto">
+            <img src="img/wrong_pass.png" width="240px" alt="">
+        </div>
+        <div class="d-flex flex flex-column align-content-center my-auto mx-auto">
+            <span>Pengaruh COVID-19 Terhadap</span>
+            <div class="rectangle mt-3 mb-3"></div>
+            <h2 class="bold">Kesehatan Mental</h2>
+            <div class="description text-wrap text-justify">
+                Banyak orang menjadi sedikit lebih cemas selama Covid-19. Namun pengalaman menunjukkan bahwa untuk
+                sebagian orang, pandemi dapat memicu atau memperburuk masalah kesehatan mental yang jauh lebih serius.
+                (BBC)
+            </div>
+        </div>
+    </div>
+    <!-- end pengaruh -->
+    <!-- sebaran -->
+    <div id="selebaran"
+        class="circular container d-flex mt-5 mx-auto px-1 mb-5 py-4 bg-primary flex flex-column justify-content-between">
+        <div id="map" class="my-auto mx-auto position-relative">
+            <img src="img/id_map.png" alt="">
+        </div>
+        <div class="flex d-flex mx-auto flex-column position-relative py-5 my-auto px-5">
+            <h5 class="text-white">Data Tanggal 3 April 2021</h5>
+            <h3 class="text-white bold mt-3 mb-5">Sebaran COVID-19 di Indonesia</h3>
+            <div class="d-flex mx-auto flex flex-row justify-content-between">
+                <div class="flex flex-column justify-content-center mx-auto">
+                    <h4 class="text-white bold px-4">6969</h4>
+                    <div class="bold circular text-white py-2 px-4 sembuh"><span>Sembuh</span></div>
+                </div>
+                <div class="d-flex mx-5 flex flex-row justify-content-between">
+                    <div class="flex flex-column justify-content-center mx-auto">
+                        <h4 class="text-white bold mx-4">6969</h4>
+                        <div class="bold circular text-white py-2 px-4 dirawat"><span>Dirawat</span></div>
+                    </div>
+                    <div class="d-flex mx-5 flex flex-row justify-content-between">
+                        <div class="flex flex-column justify-content-center mx-auto">
+                            <h4 class="text-white bold px-4">6969</h4>
+                            <div class="bold circular text-white py-2 px-4 meninggal"><span>Meninggal</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sebaran -->
+
+    <!-- Lawan Covid -->
+    <div id="lawan-covid" class="container d-flex flex pt-5 mb-5 flex-sm-column-reverse flex-lg-column-reverse flex-md-column-reverse flex flex-rev justify-content-between">
+        <div id="kata-mereka" class="flex flex-column mx-auto">
+            <span>Kata Mereka</span>
+            <div class="rectangle my-3"></div>
+            <h3 class="bold mt-2">Lawan COVID-19!</h3>
+            <div id="avatar" class="mt-3">
+                <img src="img/ilustrasi-wanita-cantik.jpg" class="avatar" alt="">
+                <h5 class="my-4">Hikawa Sayo</h5>
+            </div>
+            <button disabled class="btn btn-outline-primary ">Mahasiswa</button>
+            <div class="description my-3">
+                <span class="text-justify">Jangan pernah takut dengan korona, jika badan sehat, virus
+                    tidak akan menyerang kita. Tetap Sehat. Tetap di rumah aja.
+                    Bersatu melawan virus korona.
+                </span>
+            </div>
+        </div>
+        <div class="d-flex my-auto mx-auto">
+            <a href="" role="button">
+                <div class="bg-primary next-btn d-flex justify-content-center">
+                    <svg width="26" height="26" class="my-auto mx-auto" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.5938 13.25C25.5938 6.29297 19.957 0.65625 13 0.65625C6.04297 0.65625 0.40625 6.29297 0.40625 13.25C0.40625 20.207 6.04297 25.8438 13 25.8438C19.957 25.8438 25.5938 20.207 25.5938 13.25ZM2.84375 13.25C2.84375 7.66406 7.36328 3.09375 13 3.09375C18.5859 3.09375 23.1562 7.66406 23.1562 13.25C23.1562 18.8867 18.5859 23.4062 13 23.4062C7.36328 23.4062 2.84375 18.8867 2.84375 13.25ZM6.5 14.2656C6.5 14.6211 6.75391 14.875 7.10938 14.875H13V18.2773C13 18.8359 13.6094 19.1406 14.0156 18.7344L19.043 13.707C19.2969 13.4531 19.2969 13.0977 19.043 12.8438L14.0156 7.81641C13.6094 7.41016 13 7.71484 13 8.22266V11.625H7.10938C6.75391 11.625 6.5 11.9297 6.5 12.2344V14.2656Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <div id="illustration">
+            <img src="img/NW_primary.5e9dbcc44b4ff.png" class="p-3 mx-auto" width="70%" alt="">
+        </div>
+    </div>
+    <!-- End Lawan Covid -->
+    <!-- Footer -->
+    <footer>
+        <div class="position-relative">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(149, 204, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,84L40,80.5C80,77,160,70,240,80.5C320,91,400,119,480,126C560,133,640,119,720,126C800,133,880,161,960,157.5C1040,154,1120,119,1200,98C1280,77,1360,70,1440,56C1520,42,1600,21,1680,10.5C1760,0,1840,0,1920,7C2000,14,2080,28,2160,49C2240,70,2320,98,2400,112C2480,126,2560,126,2640,119C2720,112,2800,98,2880,80.5C2960,63,3040,42,3120,28C3200,14,3280,7,3360,10.5C3440,14,3520,28,3600,42C3680,56,3760,70,3840,73.5C3920,77,4000,70,4080,84C4160,98,4240,133,4320,147C4400,161,4480,154,4560,140C4640,126,4720,105,4800,112C4880,119,4960,154,5040,168C5120,182,5200,175,5280,168C5360,161,5440,154,5520,150.5C5600,147,5680,147,5720,147L5760,147L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+                </path>
+                <defs>
+                    <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(46, 133, 214, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                    d="M0,63L40,70C80,77,160,91,240,105C320,119,400,133,480,129.5C560,126,640,105,720,108.5C800,112,880,140,960,136.5C1040,133,1120,98,1200,77C1280,56,1360,49,1440,42C1520,35,1600,28,1680,42C1760,56,1840,91,1920,115.5C2000,140,2080,154,2160,164.5C2240,175,2320,182,2400,185.5C2480,189,2560,189,2640,175C2720,161,2800,133,2880,105C2960,77,3040,49,3120,38.5C3200,28,3280,35,3360,42C3440,49,3520,56,3600,66.5C3680,77,3760,91,3840,98C3920,105,4000,105,4080,112C4160,119,4240,133,4320,136.5C4400,140,4480,133,4560,122.5C4640,112,4720,98,4800,108.5C4880,119,4960,154,5040,150.5C5120,147,5200,105,5280,101.5C5360,98,5440,133,5520,143.5C5600,154,5680,140,5720,133L5760,126L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+                </path>
+                h
+
+            </svg>
+
+        </div>
+        <div class="p-5 d-flex text-white">
+            <div class="d-flex flex-row justify-content-between px-auto m-5">
+                <div class="d-flex flex flex-column">
+                    <h1 class="bold">COLASSE</h1>
+                    <div class="description my-3 text-justify">
+                        <span>Covid Mental Assistance adalah web yang
+                            dibuat untuk membantu para korban
+                            terdampak Covid-19 untuk dapat sehat
+                            secara mental.</span>
+                    </div>
+                </div>
+                <div class="d-flex flex flex-column mx-5">
+                    <h3 class="bold">NAVIGASI</h3>
+                    <a href="" class="text-white" role="button">
+                        <h4>Beranda</h4>
+                    </a>
+
+                    <a href="" class="text-white" role="button">
+                        <h4>Cek Kesehatan</h4>
+                    </a>
+                    <a href="" class="text-white" role="button">
+                        <h4>Blog</h4>
+                    </a>
+                    <a href="" class="text-white" role="button">
+                        <h4>Tentang</h4>
+                    </a>
+
+                </div>
+                <div class="d-flex flex flex-column mx-5">
+                    <h3 class="bold">Kontak</h3>
+                    <a href="#" class="text-white" role="button">
+                        <h5>colasse@gmail.com</h5>
+                    </a>
+
+                    <a href="#" class="text-white" role="button">
+                        <h5>JL. Industri No.1</h5>
+                    </a>
+                    <a href="#" class="text-white" role="button">
+                        <h5>62251 Babat - Lamongan</h5>
+                    </a>
+                    <a href="#" class="text-white" role="button">
+                        <h5>0856532319577</h5>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 </body>
 
 </html>
