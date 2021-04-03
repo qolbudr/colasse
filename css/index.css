@@ -1,0 +1,86 @@
+:root {
+	--text-color: #474747;
+	--main-color: #2E85D6;
+	--accent-color: #95CCFF;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+}
+
+.wrapper::before,
+.wrapper::after {
+	content: "";
+	display: table;
+}
+
+.wrapper::after {
+	clear: both;
+}
+
+.container-fluid {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+.top-ribbon-main {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.text-result-title {
+	font-family: "P-Bold";
+	font-size: 24px;
+	color: var(--text-color);
+}
+
+.text-main {
+	color: var(--main-color);
+}
+
+.text-result-subtitle {
+	font-family: "P-Regular";
+	font-size: 18px;
+	color: var(--text-color);
+}
+
+.result-image img {
+	width: 230px;
+}
+
+.result-tips {
+	/*max-width: 450px;*/
+	overflow-wrap: break-word;
+}
+
+.result-tips .container {
+	max-width: 500px;
+	overflow-wrap: break-word;
+}
+
+.text-result-tips {
+	font-size: 15px;
+	font-family: "P-Regular";
+	color: var(--text-color);
+	line-height: 22px;
+}
+
+.animate-up-down {
+	-webkit-animation: updown 1s infinite alternate;
+    animation: updown 1s infinite alternate;
+}
+
+@-webkit-keyframes updown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes updown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/*@media only screen and (min-width: )*/
