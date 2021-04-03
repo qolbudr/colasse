@@ -39,6 +39,10 @@
 	color: var(--text-color);
 }
 
+.text-true {
+	color: var(--text-color);
+}
+
 .text-main {
 	color: var(--main-color);
 }
@@ -103,7 +107,17 @@
 	cursor: pointer;
 }
 
-.btn-main:hover {
+.btn-circle {
+	background-color: var(--main-color);
+	padding: 15px 30px;
+	color: white;
+	font-family: "P-Regular";
+	font-size: 10px;
+	border-radius: 80px;
+	cursor: pointer;
+}
+
+.btn-main:hover,.btn-circle:hover {
 	background-color: var(--accent-color);
 	text-decoration: none;
 	color: white;
@@ -116,6 +130,84 @@
 	font-family: "P-Regular";
 }
 
+.link-blog:hover {
+	text-decoration: none;
+}
+
+.img-article {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 15px 0 0 15px;
+}
+
+.img-article img {
+	width: 100%;
+	object-fit: cover;
+	transition: 3s;
+}
+
+.img-article img:hover {
+	transform: scale(1.1) rotate(3deg);
+}
+
+.text-article {
+	padding: 50px;
+}
+
+.text-article h3 {
+	font-family: "P-Bold";
+	color: var(--text-color);
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.text-article p {
+	font-family: "P-Regular";
+}
+
+.card {
+	border: none;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.1);
+}
+
+.blog-carousel .owl-nav {
+	margin: 0;
+}
+
+.blog-carousel .owl-prev {
+	position: absolute;
+	z-index: 9999;
+	left: -30px;
+	top: 150px;
+}
+
+.blog-carousel .owl-next {
+	position: absolute;
+	z-index: 9999;
+	right: -30px;
+	top: 150px;
+}
+
+.blog-carousel .owl-prev,.blog-carousel .owl-next {
+	border:none;
+	text-decoration: none;
+	color: white!important;
+}
+
+.blog-carousel .owl-prev:hover,.blog-carousel .owl-next:hover {
+	border:none;
+	text-decoration: none;
+	color: white!important;
+	background: none!important;
+}
+
+.blog-carousel .owl-prev:focus,.blog-carousel .owl-next:focus {
+	outline: none;
+}
+
 .animate-up-down {
 	-webkit-animation: updown 1s infinite alternate;
     animation: updown 1s infinite alternate;
@@ -125,6 +217,7 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
+
 @keyframes updown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
@@ -139,5 +232,17 @@
 	.blog-image .container {
 		max-width: 80vw;
 		height: 200px;
+	}
+
+	.text-article {
+		padding: 30px;
+	}
+
+	.img-article {
+		border-radius: 15px 15px 0 0;
+	}
+
+	.blog-carousel .owl-next,.blog-carousel .owl-prev {
+		top: 250px;
 	}
 }
