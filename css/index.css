@@ -182,7 +182,7 @@
 }
 
 .home-w {
-	padding-top: 120px;
+	padding-top: 100px;
 }
 
 .ribbon-bottom {
@@ -410,6 +410,23 @@
 	background-color: var(--main-color);
 	padding: 15px;
 	z-index: 999999;
+}
+
+.bg-main {
+	background-color: var(--main-color);
+	color: white;
+}
+
+.bg-main a {
+	color:white;
+}
+
+.bg-main .active {
+	background-color: white;
+}
+
+.bg-main .active a {
+	color: var(--main-color);
 }
 
 .navigation-mobile .box-menu {
