@@ -10,7 +10,7 @@ $('.word-carousel').owlCarousel({
 })
 
 $(".jawaban").click(() => {
-  document.location.replace("/result.html")
+  document.location.replace("result.html")
 })
 
 $('.menu-mobile').click(function() {
