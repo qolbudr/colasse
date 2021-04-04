@@ -1,0 +1,101 @@
+.box {
+    width: 99.82px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.box-main {
+    background: #2E85D6;
+
+}
+
+.jawaban:hover {
+    background: #2E85D6;
+    color: white;
+}
+
+.box-secondary {
+    background: #95CCFF;
+}
+
+.footer-bg {
+    background-color: rgba(46, 133, 214, 1);
+    margin-top: -10px;
+    width: 100%;
+}
+footer a:focus a:hover{
+    text-decoration: none;
+}
+.btn {
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bold {
+    font-family: "P-Bold";
+}
+
+.rectangle {
+    position: relative;
+    width: 81px;
+    height: 5px;
+
+    background: #2E85D6;
+}
+
+.circular {
+    border-radius: 30px;
+}
+
+.description {
+    width: 478px;
+}
+
+
+body {
+    font-family: "P-Regular";
+}
+
+.sembuh {
+    background: #ACD136;
+}
+
+.dirawat {
+    background: #FDB047;
+
+}
+
+.meninggal {
+    background: #F25827;
+}
+
+.avatar {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.next-btn {
+    width: 131px;
+    height: 68px;
+    border-radius: 10px;
+}
+
+.leaf{
+    margin-right: -20px;
+}
+
+.footer-bg {
+    background-color: rgba(46, 133, 214, 1);
+    margin-top: -10px;
+    width: 100%;
+}

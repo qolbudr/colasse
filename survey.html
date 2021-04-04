@@ -15,62 +15,77 @@
     </style>
     <link rel="stylesheet" href="css/index.css">
     </style>
-    <style>
-        .box {
-            width: 99.82px;
-            height: 4px;
-            border-radius: 4px;
-        }
-
-        .box-main {
-            background: #2E85D6;
-
-        }
-
-        .jawaban:hover{
-            background: #2E85D6;
-            color: white;
-        }
-
-        .box-secondary {
-            background: #95CCFF;
-        }
-        .footer-bg {
-            background-color: rgba(46, 133, 214, 1);
-            margin-top: -10px;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/secondary.css">
 </head>
 
 <body>
 
+    <nav class="mb-5 pb-5 d-flex bg-primary position-relative justify-content-end text-white flex flex-column">
+        <div class="d-flex p-5">
+            <div class="d-flex text-white">
+                <a href="#index" role="button" class="btn text-white">
+                    <span class="p-4">Beranda</span>
+                </a>
+                <a href="#index" class="btn text-white">
+                    <span class="p-3">Cek Kesehatan</span>
+                </a>
+                <a href="#index" class="btn text-white">
+                    <span class="p-3">Blog</span>
+                </a>
+                <a href="#index" class="btn btn-white text-primary bg-white btn-main">
+                    <span class="p-3">Tentang</span>
+                </a>
+            </div>
+        </div>
+        <svg class="bg-white" id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(149, 204, 255, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(149, 204, 255, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,63L40,84C80,105,160,147,240,154C320,161,400,133,480,115.5C560,98,640,91,720,91C800,91,880,98,960,112C1040,126,1120,147,1200,161C1280,175,1360,182,1440,168C1520,154,1600,119,1680,108.5C1760,98,1840,112,1920,119C2000,126,2080,126,2160,129.5C2240,133,2320,140,2400,122.5C2480,105,2560,63,2640,63C2720,63,2800,105,2880,122.5C2960,140,3040,133,3120,126C3200,119,3280,112,3360,115.5C3440,119,3520,133,3600,126C3680,119,3760,91,3840,70C3920,49,4000,35,4080,42C4160,49,4240,77,4320,105C4400,133,4480,161,4560,168C4640,175,4720,161,4800,161C4880,161,4960,175,5040,161C5120,147,5200,105,5280,73.5C5360,42,5440,21,5520,14C5600,7,5680,14,5720,17.5L5760,21L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+            </path>
+            <defs>
+                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(46, 133, 214, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(46, 133, 214, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                d="M0,0L40,28C80,56,160,112,240,126C320,140,400,112,480,87.5C560,63,640,42,720,49C800,56,880,91,960,91C1040,91,1120,56,1200,35C1280,14,1360,7,1440,28C1520,49,1600,98,1680,119C1760,140,1840,133,1920,136.5C2000,140,2080,154,2160,136.5C2240,119,2320,70,2400,56C2480,42,2560,63,2640,63C2720,63,2800,42,2880,52.5C2960,63,3040,105,3120,126C3200,147,3280,147,3360,136.5C3440,126,3520,105,3600,112C3680,119,3760,154,3840,164.5C3920,175,4000,161,4080,154C4160,147,4240,147,4320,140C4400,133,4480,119,4560,94.5C4640,70,4720,35,4800,24.5C4880,14,4960,28,5040,45.5C5120,63,5200,84,5280,91C5360,98,5440,91,5520,94.5C5600,98,5680,112,5720,119L5760,126L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+            </path>
+        </svg>
+         
+    </nav>
     <div
-        class="container d-flex justify-content-center align-content-lg-between align-content-xl-between align-content-sm-center align-content-md-center">
+        class="container d-flex">
         <div class="flex d-flex flex-column">
             <div class="p-5 text-center">
                 <h3 class="text-result-subtitle">Cek Kesehatan Mental
                     <h1 class="text-result-title text-primary mt-3">Survey</h1>
             </div>
-            <div class="flex d-flex flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+            <div class="flex d-flex flex-sm-column justify-content-between flex-md-column flex-lg-row flex-xl-row">
                 <div class="d-flex">
-                    <img class="animate-up-down my-auto" width="480px" src="img/online-survey-report_114835-220.png">
+                    <img class="animate-up-down my-auto w-100" src="img/online-survey-report_114835-220.png">
                 </div>
-                <div class="d-flex flex flex-column mx-auto">
-                    <div class="d-flex flex flex-row">
+                <div class="d-flex flex flex-column mx-5">
+                    <div class="d-flex flex flex-row mx-auto">
                         <div class="box box-main m-1"></div>
                         <div class="box box-secondary m-1"></div>
                         <div class="box box-secondary m-1"></div>
                         <div class="box box-secondary m-1"></div>
                     </div>
-                    <div class="d-flex mt-4">
-                        <span class=" text-primary text-result-title">Pertanyaan</span>
+                    <div class="d-flex mt-4 mx-auto">
+                        <span class=" text-primary text-result-title ">Pertanyaan</span>
                     </div>
-                    <div class="w-75">
+                    <div class="w-75 mx-auto">
                         <span class="text-result-subtitle">Dalam 4 minggu terakhir, seberapa sering Anda
                             tiba-tiba merasa lelah?</span>
                     </div>
-                    <div class="d-flex flex mt-3 flex-column w-75">
+                    <div class="d-flex flex mt-3 flex-column w-75 mx-auto">
                         <div class="jawaban rounded border border-2 p-3 m-1 border-primary">
                             <span>Tidak Pernah</span>
                         </div>
@@ -92,82 +107,83 @@
         </div>
 
     </div>
-        <!-- Footer -->
-        <footer>
-            <div class="position-relative">
-                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                            <stop stop-color="rgba(149, 204, 255, 1)" offset="100%"></stop>
-                        </linearGradient>
-                    </defs>
-                    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                        d="M0,84L40,80.5C80,77,160,70,240,80.5C320,91,400,119,480,126C560,133,640,119,720,126C800,133,880,161,960,157.5C1040,154,1120,119,1200,98C1280,77,1360,70,1440,56C1520,42,1600,21,1680,10.5C1760,0,1840,0,1920,7C2000,14,2080,28,2160,49C2240,70,2320,98,2400,112C2480,126,2560,126,2640,119C2720,112,2800,98,2880,80.5C2960,63,3040,42,3120,28C3200,14,3280,7,3360,10.5C3440,14,3520,28,3600,42C3680,56,3760,70,3840,73.5C3920,77,4000,70,4080,84C4160,98,4240,133,4320,147C4400,161,4480,154,4560,140C4640,126,4720,105,4800,112C4880,119,4960,154,5040,168C5120,182,5200,175,5280,168C5360,161,5440,154,5520,150.5C5600,147,5680,147,5720,147L5760,147L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
-                    </path>
-                    <defs>
-                        <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-                            <stop stop-color="rgba(46, 133, 214, 1)" offset="100%"></stop>
-                        </linearGradient>
-                    </defs>
-                    <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
-                        d="M0,63L40,70C80,77,160,91,240,105C320,119,400,133,480,129.5C560,126,640,105,720,108.5C800,112,880,140,960,136.5C1040,133,1120,98,1200,77C1280,56,1360,49,1440,42C1520,35,1600,28,1680,42C1760,56,1840,91,1920,115.5C2000,140,2080,154,2160,164.5C2240,175,2320,182,2400,185.5C2480,189,2560,189,2640,175C2720,161,2800,133,2880,105C2960,77,3040,49,3120,38.5C3200,28,3280,35,3360,42C3440,49,3520,56,3600,66.5C3680,77,3760,91,3840,98C3920,105,4000,105,4080,112C4160,119,4240,133,4320,136.5C4400,140,4480,133,4560,122.5C4640,112,4720,98,4800,108.5C4880,119,4960,154,5040,150.5C5120,147,5200,105,5280,101.5C5360,98,5440,133,5520,143.5C5600,154,5680,140,5720,133L5760,126L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
-                    </path>
-                    h
-    
-                </svg>
-    
-            </div>
-            <div class="p-5 d-flex text-white bg-primary footer-bg flex flex-sm-column flex-md-column flex-lg-row flex-xl-row">
-                <div class="d-flex flex-row justify-content-between px-auto m-5">
-                    <div class="d-flex flex flex-column">
-                        <h1 class="bold">COLASSE</h1>
-                        <div class="description my-3 text-justify">
-                            <span>Covid Mental Assistance adalah web yang
-                                dibuat untuk membantu para korban
-                                terdampak Covid-19 untuk dapat sehat
-                                secara mental.</span>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="d-flex flex flex-column mx-5 my-5">
-                        <h3 class="bold">NAVIGASI</h3>
-                        <a href="" class="text-white" role="button">
-                            <h4>Beranda</h4>
-                        </a>
-    
-                        <a href="" class="text-white" role="button">
-                            <h4>Cek Kesehatan</h4>
-                        </a>
-                        <a href="" class="text-white" role="button">
-                            <h4>Blog</h4>
-                        </a>
-                        <a href="" class="text-white" role="button">
-                            <h4>Tentang</h4>
-                        </a>
-    
-                    </div>
-                    <div class="d-flex flex flex-column mx-5 my-5">
-                        <h3 class="bold">Kontak</h3>
-                        <a href="#" class="text-white" role="button">
-                            <h5>colasse@gmail.com</h5>
-                        </a>
-    
-                        <a href="#" class="text-white" role="button">
-                            <h5>JL. Industri No.1</h5>
-                        </a>
-                        <a href="#" class="text-white" role="button">
-                            <h5>62251 Babat - Lamongan</h5>
-                        </a>
-                        <a href="#" class="text-white" role="button">
-                            <h5>0856532319577</h5>
-                        </a>
-    
+    <!-- Footer -->
+    <footer>
+        <div class="position-relative">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(149, 204, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,84L40,80.5C80,77,160,70,240,80.5C320,91,400,119,480,126C560,133,640,119,720,126C800,133,880,161,960,157.5C1040,154,1120,119,1200,98C1280,77,1360,70,1440,56C1520,42,1600,21,1680,10.5C1760,0,1840,0,1920,7C2000,14,2080,28,2160,49C2240,70,2320,98,2400,112C2480,126,2560,126,2640,119C2720,112,2800,98,2880,80.5C2960,63,3040,42,3120,28C3200,14,3280,7,3360,10.5C3440,14,3520,28,3600,42C3680,56,3760,70,3840,73.5C3920,77,4000,70,4080,84C4160,98,4240,133,4320,147C4400,161,4480,154,4560,140C4640,126,4720,105,4800,112C4880,119,4960,154,5040,168C5120,182,5200,175,5280,168C5360,161,5440,154,5520,150.5C5600,147,5680,147,5720,147L5760,147L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+                </path>
+                <defs>
+                    <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(46, 133, 214, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                    d="M0,63L40,70C80,77,160,91,240,105C320,119,400,133,480,129.5C560,126,640,105,720,108.5C800,112,880,140,960,136.5C1040,133,1120,98,1200,77C1280,56,1360,49,1440,42C1520,35,1600,28,1680,42C1760,56,1840,91,1920,115.5C2000,140,2080,154,2160,164.5C2240,175,2320,182,2400,185.5C2480,189,2560,189,2640,175C2720,161,2800,133,2880,105C2960,77,3040,49,3120,38.5C3200,28,3280,35,3360,42C3440,49,3520,56,3600,66.5C3680,77,3760,91,3840,98C3920,105,4000,105,4080,112C4160,119,4240,133,4320,136.5C4400,140,4480,133,4560,122.5C4640,112,4720,98,4800,108.5C4880,119,4960,154,5040,150.5C5120,147,5200,105,5280,101.5C5360,98,5440,133,5520,143.5C5600,154,5680,140,5720,133L5760,126L5760,210L5720,210C5680,210,5600,210,5520,210C5440,210,5360,210,5280,210C5200,210,5120,210,5040,210C4960,210,4880,210,4800,210C4720,210,4640,210,4560,210C4480,210,4400,210,4320,210C4240,210,4160,210,4080,210C4000,210,3920,210,3840,210C3760,210,3680,210,3600,210C3520,210,3440,210,3360,210C3280,210,3200,210,3120,210C3040,210,2960,210,2880,210C2800,210,2720,210,2640,210C2560,210,2480,210,2400,210C2320,210,2240,210,2160,210C2080,210,2000,210,1920,210C1840,210,1760,210,1680,210C1600,210,1520,210,1440,210C1360,210,1280,210,1200,210C1120,210,1040,210,960,210C880,210,800,210,720,210C640,210,560,210,480,210C400,210,320,210,240,210C160,210,80,210,40,210L0,210Z">
+                </path>
+                h
+
+            </svg>
+
+        </div>
+        <div
+            class="p-5 d-flex text-white bg-primary footer-bg flex flex-sm-column flex-md-column flex-lg-row flex-xl-row">
+            <div class="d-flex flex-row justify-content-between px-auto m-5">
+                <div class="d-flex flex flex-column">
+                    <h1 class="bold">COLASSE</h1>
+                    <div class="description my-3 text-justify">
+                        <span>Covid Mental Assistance adalah web yang
+                            dibuat untuk membantu para korban
+                            terdampak Covid-19 untuk dapat sehat
+                            secara mental.</span>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- end footer -->
+            <div class="d-flex flex flex-column mx-5 my-5">
+                <h3 class="bold">NAVIGASI</h3>
+                <a href="" class="text-white" role="button">
+                    <h4>Beranda</h4>
+                </a>
+
+                <a href="" class="text-white" role="button">
+                    <h4>Cek Kesehatan</h4>
+                </a>
+                <a href="" class="text-white" role="button">
+                    <h4>Blog</h4>
+                </a>
+                <a href="" class="text-white" role="button">
+                    <h4>Tentang</h4>
+                </a>
+
+            </div>
+            <div class="d-flex flex flex-column mx-5 my-5">
+                <h3 class="bold">Kontak</h3>
+                <a href="#" class="text-white" role="button">
+                    <h5>colasse@gmail.com</h5>
+                </a>
+
+                <a href="#" class="text-white" role="button">
+                    <h5>JL. Industri No.1</h5>
+                </a>
+                <a href="#" class="text-white" role="button">
+                    <h5>62251 Babat - Lamongan</h5>
+                </a>
+                <a href="#" class="text-white" role="button">
+                    <h5>0856532319577</h5>
+                </a>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
 </body>
 
