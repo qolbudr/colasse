@@ -11,16 +11,34 @@
     <link rel="stylesheet" href="css/index.css"></style>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper home-w">
       <div class="container-fluid">
-        <navbar class="navbar navbar-light navbar-expand-lg justify-content-end">
+        <navbar class="home-navbar navbar navbar-light navbar-expand-lg justify-content-end hide-mobile">
           <ul class="navbar-item">
-            <li class="nav-link mr-2 active"><a href="#">Beranda</a></li>
-            <li class="nav-link mr-2"><a href="#">Cek Kesehatan</a></li>
-            <li class="nav-link mr-2"><a href="#">Blog</a></li>
-            <li class="nav-link mr-2"><a href="#">Tentang</a></li>
+            <li class="nav-link mr-2 active"><a href="./">Beranda</a></li>
+            <li class="nav-link mr-2"><a href="survey.html">Cek Kesehatan</a></li>
+            <li class="nav-link mr-2"><a href="blog.html">Blog</a></li>
+            <li class="nav-link mr-2"><a href="about.html">Tentang</a></li>
           </ul>
         </navbar>
+        <navbar class="home-navbar navbar navbar-light navbar-expand-lg justify-content-end hide-web">
+          <ul class="navbar-item">
+            <li class="nav-link mr-2 text-dark menu-mobile"><a href="javascript:void(0)"><img src="img/icon/menu.svg" width="20"></a></li>
+          </ul>
+        </navbar>
+        <div class="navigation-mobile">
+          <div class="box-menu bg-white p-4">
+            <div class="menu-close text-right">
+              <img src="img/icon/close.svg" width="20">
+            </div>
+            <div class="list-menu mt-3">
+              <a href="./">Beranda</a></li>
+              <a href="survey.html">Cek Kesehatan</a></li>
+              <a href="blog.html">Blog</a></li>
+              <a href="about.html">Tentang</a></li>
+            </div>
+          </div>
+        </div>
         <div class="landing-banner">
           <div class="row align-items-center no-gutters">
             <div class="col-lg-6 col-xs-12">
@@ -166,10 +184,10 @@
                 <div class="navigasi py-3 text-left">
                   <h4 class="font-medium text-white">NAVIGASI</h4>
                   <ul class="footer-link">
-                    <li class="nav-link mt-3"><a href="#" class="text-white">Beranda</a></li>
-                    <li class="nav-link mt-3"><a href="#" class="text-white">Cek Kesehatan</a></li>
-                    <li class="nav-link mt-3"><a href="#" class="text-white">Blog</a></li>
-                    <li class="nav-link mt-3"><a href="#" class="text-white">Tentang</a></li>
+                    <li class="nav-link mt-3"><a href="./" class="text-white">Beranda</a></li>
+                    <li class="nav-link mt-3"><a href="survey.html" class="text-white">Cek Kesehatan</a></li>
+                    <li class="nav-link mt-3"><a href="blog.html" class="text-white">Blog</a></li>
+                    <li class="nav-link mt-3"><a href="about.html" class="text-white">Tentang</a></li>
                   </ul>
                 </div>
               </div>
@@ -203,6 +221,14 @@
                 items:1
             },
         }
+    })
+    $('.menu-mobile').click(function() {
+      $('.navigation-mobile').css('visibility', 'visible');
+      $('.navigation-mobile').css('opacity', '100%');
+    })
+    $('.menu-close').click(function() {
+      $('.navigation-mobile').css('visibility', 'hidden');
+      $('.navigation-mobile').css('opacity', '0');
     })
   </script>
   </html>
