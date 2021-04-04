@@ -10,7 +10,7 @@ $('.word-carousel').owlCarousel({
 })
 
 $(".jawaban").click(() => {
-  document.location.replace("/result.html")
+  document.location.replace("result.html")
 })
 
 $('.menu-mobile').click(function() {
@@ -21,3 +21,14 @@ $('.menu-close').click(function() {
   $('.navigation-mobile').css('visibility', 'hidden');
   $('.navigation-mobile').css('opacity', '0');
 })
+
+$('.blog-carousel').owlCarousel({
+        nav: true,
+        dots: false,
+        navText: ["<a class=\"btn-circle\"><img src=\"img/icon/left.svg\" height=\"15\"></a>", "<a class=\"btn-circle\"><img src=\"img/icon/right.svg\" height=\"15\"></a>"],
+        responsive:{
+            0:{
+                items:1
+            },
+        }
+    })

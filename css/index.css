@@ -39,6 +39,7 @@
 	border-style: solid;
 	border-width: medium;
 	border-radius: 5px;
+	cursor: pointer;
 	border-color: #2E85D6;
 }
 
@@ -588,5 +589,9 @@
 
 	.hide-web {
 		visibility: visible;
+	}
+
+	.banner-page {
+		margin-top: -5px;
 	}
 }
