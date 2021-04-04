@@ -4,6 +4,37 @@
 	--accent-color: #95CCFF;
 }
 
+.about-picture{
+	border-radius: 30px;
+}
+
+.circular{
+	border-radius: 30px;
+}
+
+.arrow-btn{
+	height: auto;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 26px;
+	background-color: #2E85D6;
+}
+
+
+.about-picture:before{
+	border-radius: 5px;
+	box-shadow: -50px 80px 4px 10px #95CCFF;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.about-picture-shadow{
+	background: #95CCFF;
+	
+}
+
 .jawaban{
 	border-style: solid;
 	border-width: medium;
