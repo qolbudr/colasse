@@ -82,6 +82,10 @@
             border-radius: 10px;
         }
 
+        .leaf{
+            margin-right: -20px;
+        }
+
         .footer-bg {
             background-color: rgba(46, 133, 214, 1);
             margin-top: -10px;
@@ -92,9 +96,9 @@
 
 <body>
     <!-- NAVBAR -->
-    <navbar class="navbar navbar-light navbar-expand-lg">
-        <div class="container-fluid d-flex justify-content-end">
-            <div class="d-flex">
+    <navbar class="navbar navbar-light navbar-expand-lg justify-content-end">
+        <div class="d-flex">
+            <div class="d-flex ">
                 <a href="#index" role="button" class="btn btn-primary main-btn">
                     <span class="p-4">Beranda</span>
                 </a>
@@ -112,10 +116,10 @@
     </navbar>
     <!-- END NAVBAR -->
     <!-- Colasse -->
-    <div id="content" class="d-flex flex-wrap-reverse mt-5 align-content-center flex-sm-row flex-md-row flex-lg-row  flex-sm-wrap-reverse justify-content-between">
-        <div class="flex d-flex flex-column my-auto ml-5 p-5 mx-auto mx-sm-5 mx-md-5 mx-lg-5">
-            <h2 class="bold text-primary ml-5">COLASSE</h2>
-            <div class="d-flex description ml-5 flex-column text-wrap text-justify">
+    <div id="content" class="container d-flex flex-sm-column-reverse flex-md-column-reverse flex-column-reverse flex-xl-row">
+        <div class="d-flex flex-column my-auto mx-auto">
+            <h2 class="bold text-primary mx-5">COLASSE</h2>
+            <div class="d-flex description ml-5 flex flex-column text-wrap text-justify">
                 Covid Mental Assistance adalah web yang dibuat
                 untuk membantu para korban terdampak Covid-19
                 untuk dapat sehat secara mental.
@@ -124,13 +128,14 @@
                 <button class="btn btn-primary px-sm-5 px-md-5 px-lg-5 mx-auto py-3"><span>Selengkapnya</span></button>
             </div>
         </div>
-        <div id="illustration" class="d-flex col-4 mx-auto col-sm-6 col-md-4 col-lg-4">
-            <img src="img/psychological.png" class="img-fluid" alt="">
+        <div id="illustration" class="d-flex">
+                
+            <img src="img/psychological.png" class="mx-auto" width="480px" alt="">
         </div>
     </div>
     <!-- end colasse -->
     <!-- Pengaruh -->
-    <div class="container d-flex flex mx-auto my-auto flex-wrap flex-sm-row flex-md-row mt-5 mx-auto justify-content-center align-content-center">
+    <div class="container d-flex flex mx-auto my-auto flex-wrap flex-sm-row flex-md-column flex-lg-row flex-xl-row flex-sm-column mt-5 mx-auto justify-content-center align-content-center">
         <div class="m-5 mx-auto">
             <img src="img/wrong_pass.png" width="240px" alt="">
         </div>
@@ -148,27 +153,27 @@
     <!-- end pengaruh -->
     <!-- sebaran -->
     <div id="selebaran"
-        class="circular container d-flex mt-5 mx-auto px-1 mb-5 py-4 bg-primary flex flex-column justify-content-between">
+        class="circular container d-flex mt-5 mx-auto px-1 mb-5 py-4 bg-primary flex flex-sm-column flex-xl-row flex-lg-column flex-md-column justify-content-between">
         <div id="map" class="my-auto mx-auto position-relative">
-            <img src="img/id_map.png" alt="">
+            <img src="img/id_map.png" width="480px" alt="">
         </div>
         <div class="flex d-flex mx-auto flex-column position-relative py-5 my-auto px-5">
             <h5 class="text-white">Data Tanggal 3 April 2021</h5>
             <h3 class="text-white bold mt-3 mb-5">Sebaran COVID-19 di Indonesia</h3>
             <div class="d-flex mx-auto flex flex-row justify-content-between">
                 <div class="flex flex-column justify-content-center mx-auto">
-                    <h4 class="text-white bold px-4">6969</h4>
-                    <div class="bold circular text-white py-2 px-4 sembuh"><span>Sembuh</span></div>
+                    <h4 class="text-white bold mx-4">6969</h4>
+                    <div class="bold circular text-white my-2 mx-4 sembuh"><span>Sembuh</span></div>
                 </div>
                 <div class="d-flex mx-5 flex flex-row justify-content-between">
                     <div class="flex flex-column justify-content-center mx-auto">
                         <h4 class="text-white bold mx-4">6969</h4>
-                        <div class="bold circular text-white py-2 px-4 dirawat"><span>Dirawat</span></div>
+                        <div class="bold circular text-white my-2 mx-4 dirawat"><span>Dirawat</span></div>
                     </div>
                     <div class="d-flex mx-5 flex flex-row justify-content-between">
                         <div class="flex flex-column justify-content-center mx-auto">
-                            <h4 class="text-white bold px-4">6969</h4>
-                            <div class="bold circular text-white py-2 px-4 meninggal"><span>Meninggal</span></div>
+                            <h4 class="text-white bold mx-4">6969</h4>
+                            <div class="bold circular text-white my-2 px-4 meninggal"><span>Meninggal</span></div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +183,7 @@
     <!-- end sebaran -->
 
     <!-- Lawan Covid -->
-    <div id="lawan-covid" class="container d-flex flex pt-5 mb-5 flex-sm-column-reverse flex-lg-column-reverse flex-md-column-reverse flex flex-rev justify-content-between">
+    <div id="lawan-covid" class="container d-flex flex pt-5 mb-5 flex-sm-column-reverse flex-lg-row flex-xl-row flex-md-column-reverse justify-content-between">
         <div id="kata-mereka" class="flex flex-column mx-auto">
             <span>Kata Mereka</span>
             <div class="rectangle my-3"></div>
@@ -207,8 +212,8 @@
                 </div>
             </a>
         </div>
-        <div id="illustration">
-            <img src="img/NW_primary.5e9dbcc44b4ff.png" class="p-3 mx-auto" width="70%" alt="">
+        <div id="illustration" class="d-flex mx-auto m-3">
+            <img src="img/NW_primary.5e9dbcc44b4ff.png" class="mx-auto" width="520px" alt="">
         </div>
     </div>
     <!-- End Lawan Covid -->
@@ -238,7 +243,7 @@
             </svg>
 
         </div>
-        <div class="p-5 d-flex text-white">
+        <div class="p-5 d-flex text-white bg-primary footer-bg flex flex-sm-column flex-md-column flex-lg-row flex-xl-row">
             <div class="d-flex flex-row justify-content-between px-auto m-5">
                 <div class="d-flex flex flex-column">
                     <h1 class="bold">COLASSE</h1>
@@ -249,7 +254,8 @@
                             secara mental.</span>
                     </div>
                 </div>
-                <div class="d-flex flex flex-column mx-5">
+                </div>
+                <div class="d-flex flex flex-column mx-5 my-5">
                     <h3 class="bold">NAVIGASI</h3>
                     <a href="" class="text-white" role="button">
                         <h4>Beranda</h4>
@@ -266,7 +272,7 @@
                     </a>
 
                 </div>
-                <div class="d-flex flex flex-column mx-5">
+                <div class="d-flex flex flex-column mx-5 my-5">
                     <h3 class="bold">Kontak</h3>
                     <a href="#" class="text-white" role="button">
                         <h5>colasse@gmail.com</h5>
