@@ -4,6 +4,33 @@
 	--accent-color: #95CCFF;
 }
 
+.jawaban{
+	border-style: solid;
+	border-width: medium;
+	border-radius: 5px;
+	border-color: #2E85D6;
+}
+
+.jawaban:hover{
+	background-color: #2E85D6;
+	color: white;
+}
+
+
+.box-survey{
+	width: 100%;
+	height: 4px;
+	border-radius: 3px;
+	background: #95CCFF;
+
+}
+
+.box-survey-active{
+	background: #2E85D6;
+}
+
+
+
 .font-bold {
 	font-family: 'P-Bold';
 	color: var(--text-color);
@@ -171,6 +198,18 @@
 	color: white;
 	text-align: center;
 	font-family: 'P-Regular';
+}
+
+.home-navbar {
+	background-color: white;
+	position: fixed;
+	z-index: 9999;
+	top:0;
+	width: 100%;
+}
+
+.home-w {
+	padding-top: 100px;
 }
 
 .ribbon-bottom {
@@ -382,6 +421,60 @@
 	outline: none;
 }
 
+.hide-web {
+	visibility: hidden;
+}
+
+.navigation-mobile {
+	transition: 0.5s ease-in;
+	visibility: hidden;
+	opacity: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: var(--main-color);
+	padding: 15px;
+	z-index: 999999;
+}
+
+.bg-main {
+	background-color: var(--main-color);
+	color: white;
+}
+
+.bg-main a {
+	color:white;
+}
+
+.bg-main .active {
+	background-color: white;
+}
+
+.bg-main .active a {
+	color: var(--main-color);
+}
+
+.navigation-mobile .box-menu {
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+.list-menu a {
+	display: block;
+	font-size: 18px;
+	color: var(--text-color);
+	font-family: "P-Regular";
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.menu-close {
+	cursor: pointer;
+}
+
 .animate-up-down {
 	-webkit-animation: updown 1s infinite alternate;
     animation: updown 1s infinite alternate;
@@ -410,6 +503,10 @@
 
 	.text-article {
 		padding: 30px;
+	}
+
+	.navbar-item {
+		padding: 15px 0px;
 	}
 
 	.img-article {
@@ -452,5 +549,13 @@
 		align-self: center;
 		margin: 0 auto;
     	width: 140px;
+	}
+
+	.hide-mobile {
+		visibility: hidden;
+	}
+
+	.hide-web {
+		visibility: visible;
 	}
 }
